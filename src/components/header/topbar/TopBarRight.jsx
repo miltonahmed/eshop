@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 const TopBarRight = () => {
   const [selectedCountry, setSelectedCountry] = useState(null);
@@ -25,23 +26,28 @@ const TopBarRight = () => {
     },
     { name: 'Germany', value: 'DE', flag: 'https://flagcdn.com/24x18/de.png' },
     { name: 'France', value: 'FR', flag: 'https://flagcdn.com/24x18/fr.png' },
+    {
+      name: 'Bangladesh',
+      value: 'BD',
+      flag: 'https://flagcdn.com/24x18/bd.png',
+    },
   ];
 
   const currencies = ['USD', 'EUR', 'GBP', 'AUD', 'BDT'];
 
-  const handleSelect = country => {
+  const handleSelectCountry = country => {
     setSelectedCountry(country);
     setDropdownOpen(false);
   };
 
   return (
-    <div className="flex justify-end items-center gap-10 text-sm font-medium text-gray-700 relative z-50">
-      {/* Currency Dropdown */}
-      <div>
+    <div className="flex justify-end items-center gap-[49px] relative z-50">
+      {/* ✅ Currency Selector */}
+      <div className="w-[120px]">
         <select
           value={selectedCurrency}
           onChange={e => setSelectedCurrency(e.target.value)}
-          className="px-3 py-2 border rounded bg-white shadow-sm focus:outline-none"
+          className="w-full px-3 py-2 border rounded bg-white shadow-sm text-sm hover:bg-gray-50 focus:outline-none"
         >
           {currencies.map(currency => (
             <option key={currency} value={currency}>
@@ -51,11 +57,11 @@ const TopBarRight = () => {
         </select>
       </div>
 
-      {/* Country Dropdown */}
-      <div className="relative w-[160px]">
+      {/* ✅ Country Dropdown */}
+      <div className="relative after:absolute after:content-[''] after:h-[32px] after:w-[1px] after:bg-[#303030] after:opacity-[.25] after:left-[-25px] after:top-1/2 after:-translate-y-1/2 w-[170px]">
         <button
-          onClick={() => setDropdownOpen(prev => !prev)}
-          className="w-full flex justify-between items-center px-3 py-2 border rounded bg-white shadow-sm hover:bg-gray-50 focus:outline-none"
+          onClick={() => setDropdownOpen(!dropdownOpen)}
+          className="w-full flex justify-between items-center px-3 py-2 border rounded bg-white shadow-sm hover:bg-gray-50 focus:outline-none text-sm"
         >
           {selectedCountry ? (
             <div className="flex items-center gap-2">
@@ -82,14 +88,14 @@ const TopBarRight = () => {
           </svg>
         </button>
 
-        {/* Dropdown menu */}
+        {/* Country List Dropdown */}
         {dropdownOpen && (
-          <ul className="absolute w-full mt-1 border rounded bg-white shadow-lg overflow-hidden max-h-60 overflow-y-auto z-50">
+          <ul className="absolute w-full mt-1 border rounded bg-white shadow-lg max-h-60 overflow-y-auto z-50">
             {countries.map(country => (
               <li
                 key={country.value}
                 className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer"
-                onClick={() => handleSelect(country)}
+                onClick={() => handleSelectCountry(country)}
               >
                 <img
                   src={country.flag}
@@ -103,17 +109,21 @@ const TopBarRight = () => {
         )}
       </div>
 
-      {/* Social Icons */}
-      <div className="flex gap-4 text-lg text-gray-600">
-        <a href="#" className="hover:text-blue-600">
+      {/* ✅ Social Icons */}
+      <div
+        className="flex gap-4 text-lg text-gray-600
+      relative after:absolute after:content-[''] after:h-[32px] after:w-[1px] after:bg-[#303030] after:opacity-[.25] after:left-[-25px] after:top-1/2 after:-translate-y-1/2 w-[170px]"
+      >
+       
+        <Link to={"#"}>
+            <FaXTwitter />
+        </Link>
+        <Link to={"#"}>
           <FaFacebookF />
-        </a>
-        <a href="#" className="hover:text-black">
-          <FaXTwitter />
-        </a>
-        <a href="#" className="hover:text-pink-500">
-          <FaInstagram />
-        </a>
+        </Link>
+        <Link to={"#"}>
+           <FaInstagram />
+        </Link>
       </div>
     </div>
   );

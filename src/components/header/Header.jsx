@@ -1,5 +1,5 @@
-import BottomBar from './BottomBar'
 import MiddleBar from './MiddleBar'
+import Navbar from './Navbar'
 import TopBar from './topbar/TopBar'
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <TopBar/>
       <MiddleBar/>
-      <BottomBar/>
+      <Navbar/>
     </>
   )
 }

@@ -29,7 +29,7 @@ const MiddleBar = () => {
               <p className="text-base font-montserrat text-primary-text-color font-normal leading-6">
                 Cart
               </p>
-              <span className="text-base font-montserrat font-bold leading-6">
+              <span className="text-base font-montserrat font-bold leading-6 text-primary-text-color">
                 $ 150,00
               </span>
             </div>
@@ -40,7 +40,7 @@ const MiddleBar = () => {
               <p className="text-base font-montserrat text-primary-text-color font-normal leading-6">
                 User
               </p>
-              <span className="text-base font-montserrat font-bold leading-6">
+              <span className="text-base font-montserrat font-bold leading-6 text-primary-text-color">
                 Account
               </span>
             </div>

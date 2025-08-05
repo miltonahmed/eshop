@@ -111,7 +111,7 @@ const TopBarRight = () => {
 
       {/* ✅ Social Icons */}
       <div
-        className="flex gap-4 text-lg text-gray-600
+        className="flex justify-end gap-6 text-lg text-gray-600
       relative after:absolute after:content-[''] after:h-[32px] after:w-[1px] after:bg-[#303030] after:opacity-[.25] after:left-[-25px] after:top-1/2 after:-translate-y-1/2 w-[170px]"
       >
        

@@ -1,6 +1,6 @@
 import BottomBar from './BottomBar'
 import MiddleBar from './MiddleBar'
-import TopBar from './TopBar'
+import TopBar from './topbar/TopBar'
 
 const Header = () => {
   return (

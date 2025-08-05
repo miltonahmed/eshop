@@ -1,6 +1,6 @@
-import Container from '../utils/Container';
-import TopBarLeft from './topbar/TopBarLeft';
-import TopBarRight from './topbar/TopBarRight';
+import Container from '../../utils/Container';
+import TopBarLeft from './TopBarLeft';
+import TopBarRight from './TopBarRight';
 
 const TopBar = () => (
   <>

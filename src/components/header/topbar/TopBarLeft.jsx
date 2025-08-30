@@ -19,6 +19,7 @@ const TopBarLeft = () => {
         className="flex items-center gap-2 text-[#303030]"
       >
         <FiPhone />
+        
         +1 (555) 123‑4567
       </Link>
     </address>

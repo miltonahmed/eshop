@@ -6,8 +6,6 @@ const Footer = () => {
     <section>
      <FooterTop/>
      <FooterBottom/>
-
-     
     </section>
   )
 }

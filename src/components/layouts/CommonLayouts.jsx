@@ -6,7 +6,7 @@ const CommonLayouts = () => {
   return (
     <>
       <Header />
-      <Outlet />
+        <Outlet />
       <Footer />
     </>
   );

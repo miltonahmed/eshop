@@ -8,4 +8,6 @@
   --font-poppins: 'Poppins', sans-serif;
   --color-primary-text-color: #303030;
   --color-bg-primary: #ff624c;
+  --footer_bg_linear: 90deg, rgba(244, 244, 244, 1) 29%,
+    rgba(217, 217, 217, 1) 50%;
 }

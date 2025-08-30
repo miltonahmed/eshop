@@ -1,15 +1,15 @@
-import { Outlet } from "react-router-dom";
-import Header from "../header/Header";
+import { Outlet } from 'react-router-dom';
+import Footer from '../footer/Footer';
+import Header from '../header/Header';
 
 const CommonLayouts = () => {
   return (
     <>
-     
-        <Header />
-        <Outlet />
-      
-    </> 
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
   );
-}
+};
 
-export default CommonLayouts
+export default CommonLayouts;

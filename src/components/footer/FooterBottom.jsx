@@ -109,16 +109,6 @@ const FooterBottom = () => {
     </div>
   );
 }
-{/* <div className="relative pl-16 mr-[90px] after:absolute after:w-[1px] after:h-[32px] after:bg-[#303030] after:opacity-[0.5] after:ml-10 after:top-1/2 after:-translate-y-1/2 ">
-              <div className="absolute top-[10px] left-0">
-                <CartIcons />
-              </div>
-              <p className="text-base font-montserrat text-primary-text-color font-normal leading-6">
-                Cart
-              </p>
-              <span className="text-base font-montserrat font-bold leading-6 text-primary-text-color">
-                $ 150,00
-              </span>
-            </div> */}
+
 
 export default FooterBottom

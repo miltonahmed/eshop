@@ -1,9 +1,10 @@
-import FooterTop from './FooterTop';
-
+import FooterTop from './FooterTop'
 
 const Footer = () => {
   return (
-    <FooterTop/>
+    <section>
+     <FooterTop/>
+    </section>
   )
 }
 

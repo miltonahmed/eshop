@@ -5,7 +5,7 @@ import Container from "../utils/Container";
 
 const FooterTop = () => {
   return (
-    <div>
+    <>
       <Container>
         <div className="bg-linear-(--footer_bg_linear)  rounded-3xl py-28 px-24">
           <h3 className="font-poppins font-semibold text-4xl text-primary-text-color leading-11 ">
@@ -21,10 +21,11 @@ const FooterTop = () => {
             placeholder="Enter your email address ..."
           />
           <br />
-          <Button text="Subscribe" />
+          <Button text="Subscribe"/>
+          
         </div>
       </Container>
-    </div>
+    </>
   );
 }
 

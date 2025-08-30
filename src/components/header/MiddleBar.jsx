@@ -52,3 +52,4 @@ const MiddleBar = () => {
 };
 
 export default MiddleBar;
+ 

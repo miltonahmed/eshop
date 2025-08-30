@@ -1,4 +1,5 @@
-import FooterTop from './Footertop'
+import FooterTop from './FooterTop';
+
 
 const Footer = () => {
   return (
